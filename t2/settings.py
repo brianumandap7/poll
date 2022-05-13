@@ -129,7 +129,7 @@ MEDIA_ROOT = MEDIA_DIR
 STATIC_ROOT = STATIC_DIR
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'basetemp/static')
+    os.path.join(BASE_DIR, 'poll/static')
 ]
 
 # Default primary key field type

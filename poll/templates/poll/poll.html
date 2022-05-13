@@ -1,1 +1,9 @@
-poll.html
+<ul>
+{% for items in question %}
+
+		<li>
+			<a href="/{{items.id}}">{{items.question_text}}</a>
+		</li>
+
+{% endfor %}
+</ul>

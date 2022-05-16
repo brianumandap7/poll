@@ -2,9 +2,11 @@
 	{{items.question_text}}
 	<br>
 
+	<ul>
 	{% for item in cdetail %}
-		{{item.choice_text}} -- {{item.votes}}<br> 
+		<li>{{item.choice_text}} -- {{item.votes}} votes</li>
 	{% endfor %}
+	</ul>
 
 	<a href="/">Vote again?</a>
 

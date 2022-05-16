@@ -1,3 +1,17 @@
 {% for items in detail %}
 	{{items.question_text}}
+	<br>
+
+	<form method="POST">
+	{% csrf_token %}
+	{% for item in cdetail %}
+	
+		<input type="radio" id="html1" name="vt{{item.id}}">
+		<label for="html1">{{item.choice_text}}</label> <br>
+		
+		
+	{% endfor %}
+	<input type="submit" name="submit" value="Vote">
+	</form>
+
 {% endfor %}

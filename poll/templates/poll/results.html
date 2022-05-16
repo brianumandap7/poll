@@ -1,0 +1,10 @@
+{% for items in detail %}
+	{{items.question_text}}
+	<br>
+
+	{% for item in cdetail %}
+		{{item.choice_text}} -- {{item.votes}}<br> 
+	{% endfor %}
+
+
+{% endfor %}

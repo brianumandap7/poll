@@ -21,9 +21,9 @@ def detail(request, question_id = 0):
     }
 
     if request.method == "POST":
-        if request.POST.get('vt1'):
+        if request.POST.get('vt1') == "42":
             Choice.objects.filter(id = 1).update(votes=F('votes')+1)
-        if request.POST.get('vt4'):
+        if request.POST.get('vt4') == "Something else":
             Choice.objects.filter(id = 4).update(votes=F('votes')+1)
         return HttpResponseRedirect('results/')
     return render(request, 'poll/detail.html', query)

@@ -6,7 +6,7 @@
 	{% csrf_token %}
 	{% for item in cdetail %}
 	
-		<input type="radio" id="html1" name="vt{{item.id}}">
+		<input type="radio" id="html1" name="choice" value="{{item.choice_text}}">
 		<label for="html1">{{item.choice_text}}</label> <br>
 		
 		
